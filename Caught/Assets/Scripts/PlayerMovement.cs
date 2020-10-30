@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using Mirror;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : NetworkBehaviour
 {
     public float moveSpeed; //Creating a buff for speed
     public Rigidbody2D rb; //Rigidbody puts the sprite under the control of the physics engine. Sprite is now affected by gravity, collision with other sprites etc etc
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
         ProcessInputs();
         
     }
+
     void FixedUpdate() // Update uneffected by the framerate
     {
         Move();
@@ -21,9 +23,13 @@ public class PlayerMovement : MonoBehaviour
     }
     void ProcessInputs()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
-        moveDirection = new Vector2(moveX, moveY).normalized;
+        if (isLocalPlayer)
+        {
+            float moveX = Input.GetAxisRaw("Horizontal");
+            float moveY = Input.GetAxisRaw("Vertical");
+            moveDirection = new Vector2(moveX, moveY).normalized;
+        }
+        
     }
     void Move()
     {
