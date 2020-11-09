@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerMovement : NetworkBehaviour
 {
@@ -13,7 +14,11 @@ public class PlayerMovement : NetworkBehaviour
     void Update() //Update effected by the frame rate
     {
         ProcessInputs();
-        
+        Debug.Log(this.transform.localScale.x.ToString());
+        Debug.Log(this.transform.localScale.y);
+        Debug.Log(this.transform.localScale.z);
+        Debug.Log("");
+
     }
 
     void FixedUpdate() // Update uneffected by the framerate
