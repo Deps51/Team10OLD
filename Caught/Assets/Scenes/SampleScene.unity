@@ -121,14 +121,8 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!1 &681692224
-=======
 --- !u!1 &50062376
-=======
-=======
+
 >>>>>>> parent of 4557545... update
 --- !u!1 &50062376
 GameObject:
@@ -1066,8 +1060,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   showGUI: 1
   offsetX: 0
   offsetY: 0
@@ -1081,8 +1075,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7424c1070fad4ba2a7a96b02fbeb4bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   OnClientConnected:
     m_PersistentCalls:
       m_Calls: []
@@ -1123,20 +1117,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8aab4c8111b7c411b9b92cf3dbc5bd4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   dontDestroyOnLoad: 1
   runInBackground: 1
   autoStartServerBuild: 1
   showDebugMessages: 0
   serverTickRate: 30
-  offlineScene: 
-  onlineScene: 
+  offlineScene:
+  onlineScene:
   transport: {fileID: 1738448090}
-<<<<<<< HEAD
   networkAddress: ec2-18-218-176-113.us-east-2.compute.amazonaws.com
-=======
-  networkAddress: localhost
 >>>>>>> parent of 787ad24... AWS server added
   maxConnections: 4
   disconnectInactiveConnections: 0
