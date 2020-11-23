@@ -27,6 +27,31 @@ public class Task : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
+        if (Input.GetMouseButtonDown(0) && !isActive)
+        {
+            isActive = true;
+            initTime = Time.time;
+            tasksDone++;
+        }
+
+        if(Time.time - initTime >= 15)
+        {
+            isActive = false;
+        }
+
+        if (!isActive)
+        {
+            //GetComponent<Animation>().Play("Inactive Task");
+            animation.Play("Inactive Task");
+        }
+        else
+        {
+            //this.GetComponent<Animation>().Play("Active Task");
+            animation.Play("Active Task");
+        }
+=======
+>>>>>>> parent of ca8fa49... Added task Gen
         
     }
 }

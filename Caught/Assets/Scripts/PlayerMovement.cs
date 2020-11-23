@@ -9,6 +9,20 @@ public class PlayerMovement : NetworkBehaviour
     public Rigidbody2D rb; //Rigidbody puts the sprite under the control of the physics engine. Sprite is now affected by gravity, collision with other sprites etc etc
     private Vector2 moveDirection; //Vector to hold the new coodrinates of the sprite
 
+<<<<<<< HEAD
+    public Camera camera;
+
+
+    private void Start()
+    {
+        camera = this.gameObject.transform.GetChild(0).gameObject.GetComponent<Camera>();
+        if (isLocalPlayer) return;
+
+        camera.enabled = false;
+    }
+
+=======
+>>>>>>> parent of ca8fa49... Added task Gen
     // Update is called once per frame
     void Update() //Update effected by the frame rate
     {
